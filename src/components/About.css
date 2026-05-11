@@ -1,0 +1,173 @@
+.about {
+  padding: 100px 10%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  color: #111; /* 제목 색상도 조금 더 진하게 */
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #1e293b; /* 👈 포인트 컬러: 더 어두운 남색으로 변경 */
+  margin: 15px auto 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  gap: 80px;
+}
+
+.about-left, .about-right {
+  flex: 1;
+}
+
+/* 왼쪽 자기소개 텍스트 */
+.main-quote {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b; /* 👈 인용구 색상 변경 */
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sub-description {
+  font-size: 16px;
+  color: #555; /* 👈 본문 색상 살짝 진하게 */
+  margin-bottom: 40px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+/* 인적사항 리스트 */
+.info-item {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #333; /* 👈 인포 색상 진하게 */
+}
+
+.info-item span {
+  display: inline-block;
+  width: 80px;
+  font-weight: 800;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* GITHUB, YOUTUBE 버튼 스타일 */
+.link-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.link-group a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.link-group a:hover {
+  background: #1e293b; /* 👈 호버 색상 변경 */
+  color: #fff;
+  border-color: #1e293b;
+}
+
+/* 오른쪽 스킬 섹션 */
+.about-right h3 {
+  font-size: 32px; /* 👈 My Skills 타이틀 크기 키움 */
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 50px; /* 👈 타이틀 아래 여백 대폭 추가 (Frontend와의 간격) */
+}
+
+.skill-category {
+  margin-bottom: 35px; /* 카테고리 간 간격 살짝 넓힘 */
+}
+
+.skill-category h4 {
+  font-size: 14px;
+  color: #1e293b; /* 👈 카테고리 제목 색상 변경 */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* 자간 살짝 넓혀서 세련되게 */
+  font-weight: 700;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #f1f5f9; /* 👈 태그 배경색 살짝 변경 */
+  padding: 9px 18px; /* 패딩 살짝 키움 */
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b; /* 👈 태그 글자색 변경 */
+  transition: all 0.2s;
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px);
+  background: #e2e8f0; /* 👈 호버 배경색 변경 */
+  color: #111;
+}
+
+.skill-tag.master {
+  background: #1e293b;
+  color: #fff;
+}
+
+.main-quote::before {
+  content: '"';
+  font-family: serif;
+  font-size: 40px;
+  position: absolute;
+  left: -30px;
+  top: -10px;
+  opacity: 0.2;
+}
+
+ /* 반응형 */
+@media (max-width: 968px) {
+  .about-container {
+    flex-direction: column; /* 세로로 쌓기 */
+    gap: 60px;
+    text-align: center; /* 모바일은 가운데 정렬이 예쁨 */
+  }
+
+  .about-right h3 {
+    text-align: center; /* 모바일 My Skills 타이틀 중앙 */
+  }
+
+  .skill-tags {
+    justify-content: center; /* 모바일 태그 중앙 정렬 */
+  }
+
+  .info-item span {
+    width: 70px; /* 라벨 너비 살짝 조정 */
+  }
+
+  .link-group {
+    justify-content: center;
+  }
+}

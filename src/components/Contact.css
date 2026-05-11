@@ -1,0 +1,127 @@
+/* Contact 전체 섹션 (App.css의 section 설정을 따름) */
+.contact {
+  width: 100%;
+  padding: 100px 0;
+}
+
+/* 📦 중앙 정렬용 컨테이너 (App.css의 section-content와 맞춤) */
+.contact .section-content {
+  width: 90%;
+  max-width: 1100px; /* 너무 넓지 않게 적당히 제한 */
+  margin: 0 auto;
+}
+
+/* 🔥 핵심: 좌우 분할 레이아웃 */
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* 좌우 끝으로 벌리기 */
+  align-items: flex-start;
+  gap: 100px; /* 왼쪽과 오른쪽 사이 간격 */
+  margin-top: 50px;
+  text-align: left; /* 중앙 정렬 해제 */
+  width : 100%;
+  align-items: stretch; /* 높이를 똑같이 맞춤 */
+}
+
+/* 👈 왼쪽 정보 영역 */
+.contact-info {
+  flex: 1; /* 1:1.2 비율로 배분 */
+}
+
+.contact-info h3 {
+  font-size: 36px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.info-details p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  color: #3e52a2;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid #3e52a2;
+  padding-bottom: 2px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #1e293b;
+  border-color: #1e293b;
+}
+
+/* 👉 오른쪽 폼 영역 */
+.contact-form {
+  flex: 1.2; /* 폼 부분을 약간 더 넓게 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 살짝 그림자 줘서 입체감 */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: #f8fafc;
+  transition: all 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #fff;
+  border-color: #3e52a2;
+  box-shadow: 0 0 0 4px rgba(62, 82, 162, 0.1);
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 16px;
+  background: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #3e52a2;
+  transform: translateY(-3px);
+}
+
+/* 📱 모바일 대응 (화면 작아지면 다시 위아래로) */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact-info {
+    text-align: center;
+  }
+}

@@ -1,0 +1,145 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85); /* 조금 더 어둡게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(4px); /* 배경 살짝 흐리게 */
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  width: 1000px;
+  max-width: 95%;
+  padding: 50px 40px 40px; /* 상단 여백 좀 더 줌 (X버튼 때문) */
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden; 
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.modal-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.modal-left {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🎥 영상과 이미지 스타일 통합 */
+.modal-video, 
+.modal-left img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 가로 세로 비율 유지 */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background: #000;
+}
+
+.modal-right {
+  flex: 1;
+  text-align: left;
+}
+
+.modal-right h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.modal-sub {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.modal-section {
+  margin-bottom: 25px;
+}
+
+.modal-section h4 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #3e52a2; 
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.modal-section p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ccc;
+  word-break: keep-all; /* 한글 가독성 */
+}
+
+/* 🔗 링크 버튼 스타일 */
+.modal-links {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-links a {
+  flex: 1;
+  text-align: center;
+  padding: 14px;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+  border: 1px solid #333;
+}
+
+.modal-links a:hover {
+  background: #3e52a2;
+  border-color: #3e52a2;
+  transform: translateY(-2px);
+}
+
+/* 🏷️ 스택 태그 스타일 */
+.modal-stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-stack-tags span {
+  background: #222;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #3e52a2;
+  font-weight: 600;
+  border: 1px solid #333;
+}
+
+/* ❌ 닫기 버튼 스타일 (오른쪽 상단 고정) */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  color: white;
+  transform: rotate(90deg);
+}

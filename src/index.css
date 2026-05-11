@@ -1,0 +1,30 @@
+/* index.css : 전역 기본값 */
+
+/* 1. 모든 요소의 기본 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. 화면 전체를 쓰도록 강제 설정 */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh; /* 100% 대신 100vh가 더 확실합니다 */
+  display: block !important; /* 👈 중앙 정렬 강제 해제! */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+  background-color: #ffffff; /* 기본 배경은 화이트 */
+}
+
+:root {
+  font-family: 'Pretendard', system-ui, -apple-system, sans-serif; /* 👈 한글 폰트가 훨씬 예쁘게 나옵니다 */
+}
+
+html {
+  scroll-behavior: smooth; /* 헤더 클릭 시 스르륵 이동 */
+}

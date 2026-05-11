@@ -1,0 +1,84 @@
+/* 1. 초기화: 브라우저 기본 여백 완전히 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 2. 섹션 공통 스타일 */
+section {
+  width: 100%;           /* 배경은 화면 끝까지 꽉 차게 */
+  min-height: 80vh;      /* 최소 높이 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 내용물 가로 중앙 정렬 */
+  position: relative;
+  scroll-margin-top: 80px; /* 헤더 이동 시 위치 보정 */
+  padding: 100px 0;      /* 위아래 여백만 줌 */
+}
+
+/* 3. 내용물 컨테이너 (중간에 몰린 느낌 해결!) */
+.section-content {
+  width: 100%;
+  max-width: 1600px;     /* 너무 넓게 퍼지지 않도록 제한 */
+  margin: 0 auto;        /* 중앙 정렬 */
+}
+
+/* 4. 각 섹션별 배경색 및 디자인 (이름으로 구분) */
+
+/* Home 섹션 */
+.home-section {
+  min-height: 100vh;     /* 첫 화면은 꽉 차게 */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About 섹션 */
+.about {
+  background-color: #ffffff;
+}
+
+/* Projects 섹션 (연한 회색 + 점 패턴) */
+.projects {
+  background-color: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Contact 섹션 */
+.contact {
+  background-color: #ffffff;
+}
+
+/* 5. 공통 제목(h2) 스타일 */
+section h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+  color: #1e293b;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 6px;
+  background: #454958;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
