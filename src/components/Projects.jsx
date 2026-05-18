@@ -9,7 +9,7 @@ const projects = [
     title: '고독사 방지를 위한 생활 안심 알리미',
     description: '전기·수도 사용 데이터를 학습하여 독거노인의 생활 이상을 감지하는 AI 기반 안전 서비스',
     about : '세대별 전기와 수도 사용 데이터를 기반으로 생활 패턴을 분석하는 서비스입니다 Python과 LSTM 모델을 활용해 사용 패턴을 학습하고, 평소 사용량과 다른 변화가 발생할 경우 이상 상황을 감지합니다. 일정 기준 이상 변화가 발생하면 경고 또는 위험 알림을 제공해 독거노인의 안전 상태를 확인할 수 있도록 설계했습니다.',
-    image: '/arimi.mp4',
+    image: '/arimi2.mp4',
     // video: 음 나중에 추가
     stack: 'JavaScript / Node.js / MongoDB / Python / TensorFlow / LSTM / Pandas',
     github : 'https://github.com/minjeongkim652/Life-Responsive-AI',
@@ -30,7 +30,7 @@ const projects = [
     title: 'AI 기반 소비 인식 분석 서비스 ',
     description: 'AI 기반 OCR 기술을 활용해 영수증 이미지만으로 소비 내역을 자동 인식하고 분석하는 소비 관리 서비스',
     about : '사용자가 영수증 이미지를 업로드하면 OCR을 통해 구매 항목과 금액을 자동으로 추출하여 소비 데이터를 기록하는 서비스입니다. AI 챗봇을 활용해 사용자의 소비 패턴을 분석하고 절약 방법이나 소비 개선 방향을 제안합니다. 또한 소비 데이터를 시각화하여 사용자가 자신의 소비 습관을 직관적으로 파악할 수 있도록 구성했습니다. 수기 입력 없이 소비 기록이 가능하도록 설계하여 가계부 작성의 번거로움을 줄였습니다',
-    image: 'reciept.mp4',
+    image: 'reciept2.mp4',
     stack: 'React / Node.js / MongoDB',
     github : 'https://github.com/minjeongkim652/receiptlog',
     youtube : 'https://youtu.be/xscwGNni2xU?si=RnvR7aqwjxSuUtWK'
