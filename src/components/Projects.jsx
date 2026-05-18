@@ -10,7 +10,6 @@ const projects = [
     description: '전기·수도 사용 데이터를 학습하여 독거노인의 생활 이상을 감지하는 AI 기반 안전 서비스',
     about : '세대별 전기와 수도 사용 데이터를 기반으로 생활 패턴을 분석하는 서비스입니다 Python과 LSTM 모델을 활용해 사용 패턴을 학습하고, 평소 사용량과 다른 변화가 발생할 경우 이상 상황을 감지합니다. 일정 기준 이상 변화가 발생하면 경고 또는 위험 알림을 제공해 독거노인의 안전 상태를 확인할 수 있도록 설계했습니다.',
     image: '/arimi2.mp4',
-    // video: 음 나중에 추가
     stack: 'JavaScript / Node.js / MongoDB / Python / TensorFlow / LSTM / Pandas',
     github : 'https://github.com/minjeongkim652/Life-Responsive-AI',
     youtube : 'https://youtu.be/Hfc4QnICNmc?si=PkroVUxxO4fwr9jO'
