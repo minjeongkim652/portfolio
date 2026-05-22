@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
   axios
-    .post("http://localhost:5000/visit")
+    .post("https://portfolio-dvoe.onrender.com/visit")
     .then((res) => {
       setVisitorCount(res.data.count);
     })
