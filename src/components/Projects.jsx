@@ -19,7 +19,7 @@ const projects = [
     title: '유튜브 기반 스타일 추천',
     description: '사용자의 상황에 맞는 패션 스타일을 추천하는 AI 기반 패션 추천 웹 서비스',
     about : '사용자가 어디를 가는지, 누구를 만나는지 등의 상황을 선택하면 이에 맞는 패션 스타일을 추천하는 서비스입니다. YouTube Shorts 기반 패션 영상을 제공하여 스타일 참고를 돕고, 관련된 무신사 패션 아이템도 함께 추천합니다. 또한 에겐남/테토남 스타일 성향 테스트와 이미지 기반 의류 스타일 인식 기능을 통해 다양한 패션 추천 서비스를 제공합니다.',
-   image : "outfit2.mp4",
+    image : "outfit2.mp4",
     stack: 'React / Python / Flask / TensorFlow / Google Cloud',
     github:'https://github.com/minjeongkim652/givemethisoutfit',
     youtube : 'https://youtu.be/ucMNXad7Wp0?si=v3FenCk_GVw6HuS6'
