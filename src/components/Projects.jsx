@@ -37,13 +37,13 @@ const projects = [
   {
 id: 4,
     title: '포토폴리오 웹 사이트',
-    description: 'React 기반으로 제작한 개인 포트폴리오 웹사이트',
-    about : '프로젝트 경험과 기술 스택, 그리고 개발자로서의 방향성을 한눈에 보여줄 수 있도록 제작한 개인 포트폴리오 웹사이트입니다. React를 기반으로 컴포넌트 단위로 구조를 설계하였으며, 프로젝트 소개와 모달 UI, 스킬 시각화, Contact 메일 전송 기능 등을 구현했습니다. 사용자 경험을 고려해 부드러운 스크롤 이동과 인터랙션 효과를 적용하였으며, 반응형 레이아웃을 통해 다양한 환경에서도 자연스럽게 동작하도록 구성했습니다.',
+    description: 'React와 Node.js 기반으로 제작한 풀스택 포트폴리오 웹사이트',
+    about : '프로젝트 경험과 기술 스택, 그리고 개발자로서의 방향성을 효과적으로 전달하기 위해 제작한 개인 포트폴리오 웹사이트입니다. React 기반 컴포넌트 구조로 프론트엔드를 구현하고, Node.js와 Express를 활용해 방문자 수 API를 구축하였습니다. MongoDB Atlas를 연동하여 방문자 데이터를 저장하며, Vercel과 Render를 통해 프론트엔드와 백엔드를 각각 배포하였습니다. 또한 GitHub 기반 CI/CD 환경을 구성하여 코드 변경 시 자동 배포가 가능하도록 구현했습니다. 사용자 경험을 고려해 부드러운 스크롤 이동, 모달 UI, 반응형 레이아웃, 프로젝트 영상 및 EmailJS 기반 메일 전송 기능 등을 적용했습니다.',
     image: '/4.png',
     // video: 음 나중에 추가
-    stack: 'React / JavaScript / CSS / EmailJS',
-    github : 'https://github.com/minjeongkim652/Life-Responsive-AI',
-    youtube : 'https://youtu.be/Hfc4QnICNmc?si=PkroVUxxO4fwr9jO'
+    stack: 'React / Node.js / Express / MongoDB Atlas / Axios / EmailJS / Vercel / Render / GitHub',
+    github : 'https://github.com/minjeongkim652/portfolio',
+    youtube : ''
   }
 ]
 
